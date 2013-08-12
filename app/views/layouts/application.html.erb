@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" >
+<title>Medidores</title>
+<%= stylesheet_link_tag "application" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
+</head>
+<body >
+
+<div id="main">
+<%= render 'layouts/header' %>
+<div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+
+          <h3>Noticias</h3>
+          <h4>Segunda Actualización</h4>
+          <h5>Agosto, 2013</h5>
+          <p>la segunda actualizacion incluye un grafico con todos los datos de las mediciones de kilowatts-hora de la subestacion llamada agronomia, asi como tambien una tabla donde se encuentran los primero y ultimos valores medidos de energia consumida de cada mes.<br /><a href="#">Leer mas</a></p>
+        </div>
+        <div class="sidebar">
+          <h3>Subestaciones</h3>
+          <ul>
+            <li><a href="/agronomia">agronomia</a></li>
+            <li><a href="/agronomiadecanatos">agronomiadecanato</a></li>
+            <li><a href="/agronomiagaleras">agronomiagalera</a></li>
+            <li><a href="/agronomiaquimicas">agronomiaquimica</a></li>
+            <li><a href="/artes">artes</a></li>
+            <li><a href="/auditoriummarmols">auditoriummarmol</a></li>
+            <li><a href="/cafetines">cafetines</a></li>
+            <li><a href="/comedorues">comedorues</a></li>
+            <li><a href="/derechos">derecho</a></li>
+            <li><a href="/economia1s">economia1</a></li>
+            <li><a href="/economia2s">economia2</a></li>
+            <li><a href="/economia3s">economia3</a></li>
+            <li><a href="/economia4s">economia4</a></li>
+            <li><a href="/economia5s">economia5</a></li>
+            <li><a href="/economia6s">economia6</a></li>
+            <li><a href="/humanidades1s">humanidades1</a></li>
+            <li><a href="/humanidades2s">humanidades2</a></li>
+            <li><a href="/humanidades3s">humanidades3</a></li>
+            <li><a href="/mecanicacomplejos">mecanicacomplejo</a></li>
+            <li><a href="/medicinas">medicina</a></li>
+            <li><a href="/odontologia1s">odontologia1</a></li>
+            <li><a href="/odontologia2s">odontologia2</a></li>
+            <li><a href="/odontologia3s">odontologia3</a></li>
+            <li><a href="odontologiaimprenta">odontologiaimprenta</a></li>
+            <li><a href="periodismos">periodismo</a></li>
+          </ul>
+        </div>
+        </div>   
+      
+      <div class="content" >
+        <h4>Consumo de Energia Electrica</h4>
+        <%= yield %>                        
+      </div>      
+</div>
+</div>
+ 
+<%= render 'layouts/footer' %>
+<%#= render 'layouts/grafico'%>
+<%#= render 'layouts/maps' %>
+
+<p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="/assets/jquery.js"></script>
+  <script type="text/javascript" src="/assets/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="/assets/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+
+</html>

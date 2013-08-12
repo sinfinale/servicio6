@@ -1,0 +1,39 @@
+// Place all the styles related to the servicio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-image: url(back.jpg);
+	font-family: Arial;
+	font-size: 12px;
+	line-height:16px;  	
+}
+
+hr{
+   border: 1px solid #FFFFFF;
+}
+
+a:link{
+	color:#0055CC;
+}
+a:visited{
+		color:#990099;
+}
+a:hover{
+		color:#CC0000;
+}
+
+th{
+	background-color:#FFFFFF;
+ 	font-weight:bold;
+}
+
+td{
+	background-color:#ecf7fe;
+ 	text-align:center;
+}
